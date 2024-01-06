@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+body>div{
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  color:#151414;
+
+}
+
+/* common styles
+=================== */
+.btn{
+  background-color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color:#005FAC;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+}
+.btn:hover{
+  background-color: #f8f3f3;
+}
+.common-heading{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+
+/* Header Section
+================ */
+header{
+  width:100%;
+ height:800px;
+ background-image: url("../resources/banner/banner3.png");
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: right;
+}
+.hero{
+  max-width: 1140px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: #ffffff;
+}
+.hero .contents{
+  width: 525px;
+  text-align: right;
+  margin-right: 230px;
+}
+.contents>h1{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.contents>p{
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+main{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* past section
+================ */
+.past{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.past-img{
+  width: 50%;
+}
+.past-contents{
+  width: 416px;
+}
+.past-contents>p{
+  color:#444343;
+  margin:1.5rem 0 1rem ;
+}
+.key-points{
+  color: #444343;
+}
+.past-contents>div>p>i{
+  color: #16D887;
+  margin-right: 8px;
+}
+
+/* plans section
+==================== */
+.plan-container{
+  text-align: center;
+  margin-top: 140px;
+}
+
+.plans{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.plan>h2{
+  margin: 1.5rem auto 1rem;
+  font-size: 28px;
+}
+.plan>p{
+  color: #737272;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* contact section
+================= */
+.contact-container{
+ margin-top: 130px;
+ position: relative;
+ margin-bottom: 140px;
+ overflow: hidden;
+ padding: 4rem;
+ border-radius:10px;
+}
+.contact-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgb(20, 6, 207), white), url('../resources/watch.png');
+  background-blend-mode: multiply; 
+  z-index: -1; 
+  background-size: cover;
+}
+.contact-container> h1{
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.5rem;
+}
+
+/* footer section
+==================== */
+footer{
+  background-color: #151414;
+  width:100%;
+}
+.footer-contents{
+  width: 1140px;
+  color:white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 130px 0;
+}
+.future{
+  width: 50%;
+}
+.future .footer-heading{
+  margin-bottom: 1rem;
+}
+.future>p{
+  font-size: 1rem;
+  margin-bottom: 1.5rem ;
+}
+.contact{
+  margin-bottom: 2rem;
+}
+.contact>p{
+  margin-bottom:1rem;
+}
+
+.social-icon{
+  display: flex;
+  gap:1.5rem;
+}
+.social-icon>i{
+  background-color: #f8f3f3;
+  padding:12px;
+  border-radius: 50%;
+  color:#1DA1F2;
+  font-size: 1.1rem;
+}
+
+.subscribe>h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.subscribe>input{
+  padding:1.25rem;
+  background-color: transparent;
+  border:1px solid white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: 2rem auto 1rem;
+  display: block;
+  color: white;
+}
+.subscribe>button{
+  background-color: #005FAC;
+  color:white;
+}
+.subscribe>button:hover{
+  background-color: #03345d;
+  color:rgb(236, 229, 229);
+}
